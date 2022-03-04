@@ -8,7 +8,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       # - ./buildkite-secrets:/buildkite-secrets:ro
     # environment:
-    #   BUILDKITE_BUILD_PATHX: /var/lib/buildkite/builds
+    #   BUILDKITE_BUILD_PATH: /var/lib/buildkite/builds
     command: [ "start", "--token", "$BUILDKITE_AGENT_TOKEN" ]
     # secrets:
     #   - POSTGRES_USER
